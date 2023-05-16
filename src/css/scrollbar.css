@@ -1,14 +1,21 @@
 *::-webkit-scrollbar {
-    width: 12px;
-  }
+  width: 12px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #f1e9e9;
-    border-radius: 10px;
-  }
+*::-webkit-scrollbar-track {
+  background: #f1e9e9;
+  border-radius: 10px;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #582965;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
+*::-webkit-scrollbar-thumb {
+  background-color: #582965;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #582965 #ffffff;
+    scrollbar-width: thin;
   }
+}
